@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --bgColor:#8400ff;
+}
+
+body{
+    background-color: #222;
+}
+
+main{
+    width: 80%;
+    min-height: 30vh;
+    height: 40vh;
+    margin: 20vh auto 2rem auto;
+    /* border: 2px solid white; */
+    display: flex;
+
+}
+
+main div{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+main .imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+main .txtBox{
+    padding: .8rem;
+}
+
+.txtBox h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    margin: .9rem 0;
+}
+
+.txtBox p{
+    font-size: 2rem;
+    word-spacing: .1rem;
+    letter-spacing: .08rem;
+    overflow: auto;
+}
+
+/* ------------------------------------------ social media --------------------------------------------- */
+
+section{
+    width: 80%;
+    height: 10vh;
+    background-color: var(--bgColor);
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section span{
+    font-size: 2rem;
+    margin: 0 4rem;
+}
+
+.clips{
+    width: 80%;
+    min-height: 50vh;
+    /* height: 60vh; */
+    max-height: auto;
+    margin: 0 auto;
+    /* border: 2px solid white; */
+}
+
+.clips h1{
+    text-transform: capitalize;
+    font-size: 4rem;
+    letter-spacing: .1rem;
+}
+
+.clips p{
+    font-size: 2rem;
+    margin: 1rem 0;
+    letter-spacing: .08rem;
+    word-spacing: .1rem;
+}
+
+.clipVideo{
+    width: 100%;
+    /* border: 2px solid green; */
+    margin: 3rem 0 0 0 ;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.wrapper{
+    min-width: 300px;
+    max-width: 320px;
+    height: 60vh;
+    /* background-color: #ddd; */
+}
+
+.wrapper .box{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid red; */
+}
+
+.box1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper .box2{
+    background-color: var(--bgColor);
+    padding: 1rem;
+}
+
+.box2 span{
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+}
+
+.box2 p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    letter-spacing: .08rem;
+    word-spacing: .1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------- responsiveness --------------------------------------------*/
+
+@media screen and (max-width:808px){
+
+    .clipVideo{
+        gap: 5rem;
+
+    }
+
+    .wrapper{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:768px){
+    html{
+        font-size: 9px;
+    }
+    main{
+        flex-direction: column;
+        /* border: 2px solid white; */
+        height: auto;
+        margin-top: 10vh;
+    }
+    main div{
+        width: 100%;
+    }
+    
+section span{
+    margin: 0 2rem;
+}
+    .clips h1{
+        font-size: 3rem;
+    }
+    .clips p{
+        font-size: 1.8rem;
+    }
+}

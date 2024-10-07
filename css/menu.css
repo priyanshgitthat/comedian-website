@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --bgColor:#8400ff;
+}
+
+body{
+    background-color: #222;
+}
+
+header{
+    width: 80%;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 10%;
+    height: 10vh;
+    /* background-color:#8400ff3d; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+}
+
+header h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: .4rem;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+}
+
+nav a{
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 .5rem;
+    margin: 0 .2rem;
+    align-content: center;
+    transition: all .2s ease;
+    letter-spacing: .1rem;
+}
+
+nav a:hover{
+    background-color: var(--bgColor);
+    box-shadow: 0 0 20px var(--bgColor);
+}
+
+header label{
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: none;
+}
+header input{
+    display: none;
+}
+input:checked ~ .hammenu{
+    top: 10vh;
+}
+
+.hammenu{
+    position: fixed;
+    top: -1000%;
+    width: 100%;
+    z-index: -20;
+    min-height: 300px;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .2s ease-in;
+}
+
+.hammenu a{
+    text-align: center;
+    font-size: 1.8rem;
+    /* border: 2px solid white; */
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    padding: 2.9rem 0;
+}
+
+.hammenu a:hover{
+    background-color: white;
+    color: var(--bgColor);
+}
+
+@media screen and (max-width:550px) {
+    header{
+       /* background-color: orange; */
+       width: 100%;
+       padding: 0 2rem;
+       left:0px;
+    }
+
+    .hammenu{
+        left: 0px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    header label{
+        display: block;
+    }
+
+    header nav{
+        display: none;
+    }
+}
+

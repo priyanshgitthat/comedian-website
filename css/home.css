@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --bgColor:#8400ff;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+    background-color: #222;
+    padding: 10vh 0 .1rem 0  ;
+}
+
+
+
+/* ----------------------------------------- section ------------------------------------------- */
+section{
+    width: 80%;
+   height: 90vh;
+    /* border: 2px solid white; */
+    margin: 0 auto;
+    display: flex;
+}
+
+.box{
+    height: 100%;
+}
+
+.box1{
+    width: 35%;
+    /* background-color: orange; */
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.box1 h1{
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+
+.box1 span{
+    color: var(--bgColor);
+    text-shadow: 0 0 20px var(--bgColor);
+}
+
+.box2{
+    width: 30%;
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.box2 .wrap{
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+    border-top-left-radius: 600px;
+    border-top-right-radius: 600px;
+    background-color: var(--bgColor);
+    box-shadow: 0 0 20px var(--bgColor);
+    padding: 0 .8rem;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+
+
+}
+
+.box2 .wrap img{
+    width: 90%;
+    height: 90%;
+    /* object-fit: contain; */
+    object-fit: cover;
+    display: block;
+    /* border: 2px solid white; */
+
+}
+.box3{
+    width: 35%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: .6rem 1rem;
+}
+
+.box3 h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+    letter-spacing: .08rem;
+}
+
+.box3 p{
+    font-size: 1.5rem;
+    letter-spacing: .08rem;
+    word-spacing: .1rem;
+}
+
+.btn a{
+    background-color: var(--bgColor);
+    display: inline-block;
+    padding: .4rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 1rem .8rem 0 0;
+    border: 2px solid transparent;
+}
+.btn a:nth-child(1){
+    box-shadow: 0 0 10px var(--bgColor);
+    transition: all .2s ease;
+}
+.btn a:nth-child(1):hover{
+    transform: scale(.9);
+}
+.btn a:nth-child(2){
+
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    transition: all .2s ease-in;
+}
+.btn a:nth-child(2):hover{
+    border: 2px solid var(--bgColor);
+    color: var(--bgColor);
+
+}
+/* ----------------------------------------- content ------------------------------------------ */
+
+.content{
+    width: 80%;
+    min-height: 50vh;
+    height: 60vh;
+    max-height: auto;
+    /* background-color: var(--bgColor); */
+    /* border: 2px solid white; */
+    margin: 10rem auto;
+    display: flex;
+}
+
+.content .pack{
+    height: 100%;
+    width: 50%;
+}
+
+.pack1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pack2{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.pack2 h1{
+    text-transform: capitalize;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+}
+
+.pack2 p{
+    font-size: 2rem;
+    letter-spacing: .08rem;
+    word-spacing: .1rem;
+}
+
+/* ----------------------------------------------------- carousel --------------------------------------------------- */
+
+.carrousel{
+    width: 80%;
+    height: 400px;
+    /* border: 2px solid white; */
+    margin: 0 auto;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.carrousel .wrapper{
+    scroll-snap-align: center;
+    width: 300px;
+    height: 100%;
+    /* border: 2px solid red; */
+    flex-shrink: 0;
+}
+
+.wrapper .imgBox, .wrapper .txtBox{
+    width: 100%;
+    height: 50%;
+}
+
+.imgBox{
+    background-color: #dddd;
+}
+
+.imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.txtBox{
+    background-color: var(--bgColor);
+    padding: 1rem;
+}
+
+.txtBox h1{
+    font-size: 2.2rem;
+    text-transform:capitalize;
+}
+
+.txtBox p{
+    font-size: 1.5rem;
+}
+
+.txtBox a{
+    background-color: #222;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: .1rem 2rem;
+    font-weight: bold;
+    margin: .5rem 0;
+    display: inline-block;
+    border: 2px solid #222;
+    transition: all .2s ease-in-out;
+}
+
+.txtBox a:hover{
+    border: 2px solid #ddd;
+}
+
+/* ------------------------------------- book -------------------------------- */
+
+.book{
+    width: 80%;
+    min-height: 70vh;
+    /* border: 2px solid white; */
+    margin: 10vh auto;
+}
+
+.book h1{
+    text-transform: capitalize;
+    font-size: 3rem;
+    letter-spacing: .1rem;
+    margin: 2rem 0;
+}
+
+.book p{
+    font-size: 2rem;
+    letter-spacing: .05rem;
+    padding: 0 1rem;
+    word-spacing: .2rem;
+    margin: 2rem 0;
+}
+
+.book .clip{
+    width: 100%;
+    height: 250px;
+    border: 2px solid var(--bgColor);
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.clip .clip-content{
+    scroll-snap-align: center;
+    min-width: 400px;
+    width: 50%;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    flex-shrink: 0;
+}
+
+.clipVideo{
+min-width: 200px;
+width: 50%;
+height: 100%;
+/* background-color: red; */
+}
+
+.clipVideo video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.clipContent{
+    min-width: 200px;
+    width: 50%;
+    height: 100%;
+    background-color:var(--bgColor);
+}
+
+.clipContent h1{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    padding: 0 1rem;
+    margin: .5rem 0;
+}
+
+.clipContent p{
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* ------------------------------------- last pic -------------------------------------- */
+
+.lastpic{
+    width: 80%;
+    height: 90vh;
+    /* border: 2px solid white; */
+    margin: 0 auto;
+    position:  relative;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.lastpic::after{
+content: " ";
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: #000000a9;
+}
+
+.lastpic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
